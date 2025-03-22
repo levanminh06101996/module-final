@@ -1,0 +1,179 @@
+// src/scss/base/_reset.scss
+/* Reset CSS dựa trên Eric Meyer's Reset và Normalize.css đơn giản hóa */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset cho các phần tử mới */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Đặt line-height mặc định cho body */
+body {
+  line-height: 1;
+}
+
+/* Xóa list style cho ul, ol */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Xóa style mặc định cho blockquote và q */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Xóa border mặc định cho table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Xóa outline mặc định khi focus */
+:focus {
+  outline: 0;
+}
+
+/* Đảm bảo box-sizing đồng nhất */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Xóa text-decoration mặc định cho link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Đảm bảo hình ảnh không vượt quá container */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Xóa style mặc định cho input và button */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+/* Xóa hiệu ứng mặc định khi click trên mobile */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

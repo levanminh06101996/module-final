@@ -1,0 +1,24 @@
+import React from "react";
+import Banner from "./components/Banner";
+import Category from "./components/Category";
+import Clothes from "./components/Clothes";
+import HighlightProduct from "./components/HighlightProduct";
+import Information from "./components/Information";
+import Outfit from "./components/Outfit";
+import PromotionalProduct from "./components/PromotionalProduct";
+
+const Home = () => {
+  return (
+    <div>
+      {/* <Banner />
+      <Category />
+      <PromotionalProduct />
+      <HighlightProduct />
+      <Outfit />
+      <Clothes />
+      <Information /> */}
+    </div>
+  );
+};
+
+export default Home;
