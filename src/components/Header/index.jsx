@@ -121,8 +121,7 @@ const Header = () => {
           </div>
         </div>
       </section>
-
-      <SliderCommon />
+      <SliderCommon className={styles.slidercommon} />
     </div>
   );
 };
