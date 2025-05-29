@@ -1,20 +1,5 @@
-@import "./reset";
-@import "./variables";
-
-body {
-  font-family: $font-family-primary;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1600px;
-  padding: 0 50px;
-}
-
-.meme1 {
-  color: aqua;
-}
-
-.meme2 {
-  color: yellow;
-}
+@use "./reset";
+@use "./variables";
+@use "./grid";
+@use "./bases";
+@use "./mixins";
