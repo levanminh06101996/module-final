@@ -7,7 +7,6 @@ import SearchIcon from "../icons/SearchIcon";
 import User from "../icons/User";
 import ShoppingCart from "../icons/ShoppingCart";
 import OptionalSymbol from "../icons/OptionalSymbol";
-import SliderCommon from "../SliderCommon/SliderCommon";
 
 const Header = () => {
   return (
@@ -121,7 +120,6 @@ const Header = () => {
           </div>
         </div>
       </section>
-      <SliderCommon className={styles.slidercommon} />
     </div>
   );
 };

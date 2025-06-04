@@ -6,17 +6,19 @@ import HighlightProduct from "./components/HighlightProduct";
 import Information from "./components/Information";
 import Outfit from "./components/Outfit";
 import PromotionalProduct from "./components/PromotionalProduct";
-
+import styles from "./Home.module.scss";
 const Home = () => {
   return (
-    <div>
-      {/* <Banner />
-      <Category />
-      <PromotionalProduct />
+    <div className={styles.home}>
+      <Banner className={styles.banner} />
+      {
+        <Category />
+        /*<PromotionalProduct />
       <HighlightProduct />
       <Outfit />
       <Clothes />
-      <Information /> */}
+      <Information /> */
+      }
     </div>
   );
 };

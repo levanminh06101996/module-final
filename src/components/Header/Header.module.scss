@@ -2,11 +2,14 @@
 @use "@/assets//styles/_mixins.scss";
 @use "@/assets//styles//bases";
 
-// @media screen and (max-width: 1600px) {
-//   .container {
-//     background-color: aqua;
+// @include mixins.screen(xxl) {
+//   :global {
+//     .container {
+
+//     }
 //   }
 // }
+
 .topbar {
   background-color: variables.$primary-color;
   max-width: 100vw;

@@ -1,16 +1,11 @@
 import React from "react";
 import styles from "./Banner.module.scss";
-import Banner1 from "@/assets/images/banner1.webp";
-
+import SliderCommon from "../../../../components/SliderCommon/SliderCommon";
 const Banner = () => {
   return (
-    <div>
-      {/* <h1 className={styles.banner}>Banner</h1>
-      <div className={styles.searchhh}>
-        <SearchIcon />
-      </div>
-      <img src={Banner1} alt="" /> */}
-    </div>
+    <section className={styles.banner}>
+      <SliderCommon className={styles.slidercommon} />
+    </section>
   );
 };
 
