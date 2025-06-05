@@ -1,0 +1,111 @@
+.addToCart {
+  //   max-width: calc(100% - 40px);
+  position: relative;
+  max-width: 220px;
+  max-height: 36px;
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  color: black;
+  background-color: transparent;
+}
+
+.quickViewCart {
+  position: relative;
+  cursor: pointer;
+  margin-top: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 40px;
+  max-height: 33px;
+  background-color: rgb(45, 6, 6);
+  border-radius: 4px;
+
+  p {
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2px 3px;
+    font-weight: 200;
+    font-size: 8px;
+    position: absolute;
+    top: -95%;
+    border-radius: 4px;
+    width: 60px;
+    height: 20px;
+    background-color: black;
+  }
+  p::before {
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+  }
+}
+
+.quickViewCart:hover {
+  p {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.buttonShoppingCart {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  cursor: pointer;
+  max-height: 36px;
+  display: flex;
+  padding: 6px 4px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 4px;
+  justify-content: space-around;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 0;
+  span {
+    transform: translateY(12%);
+    margin-left: 2px;
+  }
+}
+.buttonShoppingCart:hover {
+  .shoppingCart {
+    position: relative;
+    color: white;
+    z-index: 2;
+  }
+  span {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+}
+
+.buttonShoppingCart::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  height: 100%;
+  width: 0%;
+  transform: skewX(45deg);
+  background-color: #d60000;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.buttonShoppingCart:hover::before {
+  width: 160%;
+}

@@ -1,0 +1,14 @@
+.promotial {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  background-color: orange;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prosale {
+  position: absolute;
+  z-index: 1;
+}

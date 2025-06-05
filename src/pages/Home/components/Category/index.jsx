@@ -64,7 +64,7 @@ const Category = () => {
           DANH MỤC SẢN PHẨM
         </a>
       </div>
-      <CustomArrows className={styles.cusTomSlide} />
+      <CustomArrows />
     </div>
   );
 };
@@ -94,37 +94,19 @@ function CustomArrows() {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    // <div className={styles.slider_category}>
-    //   <Slider {...settings}>
-    //     <div className={styles.category_products}>
-    //       <img src={Img1} alt="#" />
-    //       <div className={styles.categories_description}>
-    //         <h2>
-    //           <a href="">Sơ Mi</a>
-    //         </h2>
-    //         <div className={styles.categories_arrow}>
-    //           <NextIconCategory className={styles.categories_arrowNext} />
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </Slider>
-    // </div>
-
     <div className={styles.slider_category}>
       <Slider {...settings}>
         {categoryProducts.map((category) => (
-          <div
-            key={category.id}
-            class="custom-slick"
-            className={styles.category_products}
-          >
-            <img src={category.img} alt="#" className={styles.image} />
-            <div className={styles.categories_description}>
-              <h2>
-                <a href="">{category.name}</a>
-              </h2>
-              <div className={styles.categories_arrow}>
-                <NextIconCategory className={styles.categories_arrowNext} />
+          <div className={styles.customSlide}>
+            <div key={category.id} className={styles.category_products}>
+              <img src={category.img} alt="#" className={styles.image} />
+              <div className={styles.categories_description}>
+                <h2>
+                  <a href="">{category.name}</a>
+                </h2>
+                <div className={styles.categories_arrow}>
+                  <NextIconCategory className={styles.categories_arrowNext} />
+                </div>
               </div>
             </div>
           </div>

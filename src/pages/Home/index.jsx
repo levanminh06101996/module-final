@@ -7,18 +7,17 @@ import Information from "./components/Information";
 import Outfit from "./components/Outfit";
 import PromotionalProduct from "./components/PromotionalProduct";
 import styles from "./Home.module.scss";
+
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <div className={styles.Home}>
       <Banner className={styles.banner} />
-      {
-        <Category />
-        /*<PromotionalProduct />
-      <HighlightProduct />
+      <Category className={styles.categories} />
+      <PromotionalProduct className={styles.promotional} />
+      {/* <HighlightProduct />
       <Outfit />
       <Clothes />
-      <Information /> */
-      }
+      <Information />   */}
     </div>
   );
 };

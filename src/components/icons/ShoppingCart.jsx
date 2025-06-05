@@ -1,4 +1,4 @@
-function ShoppingCart(className) {
+function ShoppingCart({ className }) {
   return (
     <svg
       className={className}

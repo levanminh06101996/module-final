@@ -1,3 +1,91 @@
-.banner {
-  margin-top: 50px;
+// .banner {
+//   margin-top: 50px;
+//   max-width: 1920px;
+// }
+
+.sliderContainer {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
+
+.slideImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 750px;
+  outline: none;
+}
+.slick-slider {
+  position: relative;
+}
+
+.slick_prev,
+.slick_next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: red;
+
+    &:before {
+      color: white;
+    }
+  }
+}
+
+.slick_prev {
+  top: 44%;
+  left: -8%;
+}
+.slick_next {
+  top: 44%;
+  right: -8%;
+}
+.sliderContainer:hover {
+  .slick_next {
+    transform: translateX(-400%);
+  }
+}
+
+.sliderContainer:hover {
+  .slick_prev {
+    transform: translateX(400%);
+  }
+}
+
+.slick_prev:before {
+  position: absolute;
+  top: -12%;
+  left: 7%;
+  content: "chevron_left";
+  font-family: "Material Symbols Outlined";
+  // font-size: 40px; /* Kích thước mũi tên */
+  font-size: 40px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  color: rgb(204, 26, 26); /* Màu mũi tên */
+  transition: all 0.4s ease;
+}
+
+.slick_next:before {
+  position: absolute;
+  top: -12%;
+  left: 8%;
+  content: "chevron_left";
+  font-family: "Material Symbols Outlined";
+  font-size: 40px;
+  color: rgb(204, 26, 26);
+  display: inline-block; /* cần để transform hoạt đọng*/
+  transform: rotate(180deg);
+  transition: all 0.4s ease;
+}
+
+// :global(.slick-active) .dotButton {
+//   background-color: rgb(0, 0, 0); /* Màu đen khi active */
+// }

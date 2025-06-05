@@ -2,12 +2,12 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Outlet } from "react-router-dom";
-
+import styles from "./DefaultLayout.module.scss";
 const DefaultLayout = () => {
   return (
-    <div>
+    <div className={styles.hero}>
       <Header />
-      <main>
+      <main className={styles.mainproject}>
         <Outlet />
       </main>
       <Footer />

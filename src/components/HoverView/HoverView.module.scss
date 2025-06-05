@@ -1,0 +1,43 @@
+.hoverView {
+  background-color: aqua;
+  display: inline-block;
+}
+
+.buttonHover {
+  position: relative;
+  background-color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px rgb(28, 26, 26) solid;
+  border-radius: 4px;
+  z-index: 0;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.buttonHover:hover {
+  span {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+}
+
+.buttonHover::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  height: 100%;
+  width: 0%;
+  transform: skewX(45deg);
+  background-color: #d60000;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.buttonHover:hover::before {
+  width: 130%;
+}

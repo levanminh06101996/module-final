@@ -1,0 +1,14 @@
+{
+  "promotial": [
+    {
+      "id": 1,
+      "title": "áo khoác",
+      "img": "./src/asset/images/promotial-products/promotial-product1"
+    },
+    {
+      "id": 2,
+      "title": "áo dài",
+      "img": "./src/asset/images/promotial-products/promotial-product2"
+    }
+  ]
+}
