@@ -2,13 +2,14 @@
   "promotial": [
     {
       "id": 1,
-      "title": "áo khoác",
-      "img": "./src/asset/images/promotial-products/promotial-product1"
-    },
-    {
-      "id": 2,
-      "title": "áo dài",
-      "img": "./src/asset/images/promotial-products/promotial-product2"
+      "discount": "-26%",
+      "title": "Áo T shirt trơn in logo ngực FSTS001",
+      "img": "./src/asset/images/promotial-products/promotial-product2",
+      "bgi": "./src/asset/images/promotial-products/bg-promotional-products2",
+      "quantityColor": "+16 màu sắc",
+      "quantitySize": "+4 Kích thước",
+      "quantityPrice": "149,000₫",
+      "quantityPriceNo": "200,000₫"
     }
   ]
 }

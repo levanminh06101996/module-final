@@ -1,5 +1,5 @@
 import styles from "./HoverView.module.scss";
-function HoverView({ minWidth = "250px", height = "40px", title }) {
+function HoverView({ minWidth = "", height = "", title }) {
   return (
     <div className={styles.hoverView}>
       <button

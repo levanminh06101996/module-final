@@ -1,14 +1,12 @@
 .hoverView {
-  background-color: aqua;
   display: inline-block;
 }
-
 .buttonHover {
   position: relative;
   background-color: white;
   text-transform: uppercase;
   cursor: pointer;
-  border: 1px rgb(28, 26, 26) solid;
+  border: 2px rgb(28, 26, 26) solid;
   border-radius: 4px;
   z-index: 0;
   overflow: hidden;
