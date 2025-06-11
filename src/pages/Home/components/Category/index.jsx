@@ -90,6 +90,7 @@ function CustomArrows() {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    className: "binhbe",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -97,9 +98,13 @@ function CustomArrows() {
     <div className={styles.slider_category}>
       <Slider {...settings}>
         {categoryProducts.map((category) => (
-          <div className={styles.customSlide}>
+          <div className={styles.customSlide} key={category.id}>
             <div key={category.id} className={styles.category_products}>
-              <img src={category.img} alt="#" className={styles.image} />
+              <img
+                src={category.img}
+                alt="#"
+                className={`${styles.image} imagebe`}
+              />
               <div className={styles.categories_description}>
                 <h2>
                   <a href="">{category.name}</a>

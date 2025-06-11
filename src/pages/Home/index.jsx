@@ -14,10 +14,10 @@ const Home = () => {
       <Banner className={styles.banner} />
       <Category className={styles.categories} />
       <PromotionalProduct className={styles.promotional} />
-      {/* <HighlightProduct />
-      <Outfit />
+      <HighlightProduct />
+      {/* <Outfit />
       <Clothes />
-      <Information />   */}
+      <Information />    */}
     </div>
   );
 };

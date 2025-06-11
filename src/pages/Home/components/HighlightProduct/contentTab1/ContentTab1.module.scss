@@ -1,21 +1,11 @@
-.wrapperPromotional {
-  min-width: 100vh;
-  background-color: #fff9f9;
-  padding: 20px 0;
-  height: 622px;
-  margin-left: auto;
-  margin-right: auto;
-}
+@use "../../../../../assets//styles/grid" as grid;
+
 .promotional {
   position: relative;
-  height: 560px;
-  // padding-bottom: 60px;
+  height: 660px;
   background-color: #fff9f9;
 }
 
-.customArrows {
-  margin: 0 auto;
-}
 .prosale {
   position: absolute;
   z-index: 1;
@@ -48,13 +38,14 @@
 }
 
 .imageSlide {
+  overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
 }
 
 .imageDetail {
-  max-width: 92%;
+  max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
@@ -62,7 +53,7 @@
 .bgOverlay {
   object-fit: cover;
   height: 100%;
-  width: 90%;
+  width: 100%;
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -71,8 +62,9 @@
 
 .imageSlide:hover {
   .bgOverlay {
+    transform: scale(1.15);
     opacity: 1;
-    width: 92%;
+    width: 100%;
   }
   .AddToCart {
     opacity: 1;
@@ -82,24 +74,12 @@
 .slider_promotional {
   position: relative;
 }
-.nextIcon {
-  position: absolute;
-  top: -12%;
-  right: 3%;
-  transform: rotate(180deg);
-}
-
-.prevIcon {
-  position: absolute;
-  top: -12%;
-  right: 1%;
-}
 
 .AddToCart {
   transition: all 0.5s ease;
   position: absolute;
-  top: 80%;
-  left: 12%;
+  top: 85%;
+  left: 22%;
   opacity: 0;
 }
 
@@ -110,17 +90,31 @@
 }
 
 .informationDetail {
-  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 20px;
+  height: 104px;
+  gap: 4px;
+  cursor: pointer;
+  background-color: white;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
 }
 .customSlide:has(.informationDetail:hover) .AddToCart {
   opacity: 1;
 }
 
 .customSlide:has(.informationDetail:hover) .bgOverlay {
+  transform: scale(1.15);
   opacity: 1;
-  width: 92%;
+  width: 100%;
 }
-
+.customSlide {
+  margin-bottom: 24px;
+}
 .varialt {
   color: #000000;
   display: flex;
@@ -139,8 +133,10 @@
   margin-top: 6px;
 
   span:first-child {
+    font-size: 16px;
+    font-weight: 800;
     color: #ff2c26;
-    margin-right: 6px;
+    margin-right: 10px;
   }
   span:nth-of-type(2) {
     position: relative;
@@ -155,10 +151,4 @@
     background-color: #878c8f;
     top: 49%;
   }
-}
-
-.informationDetail {
-  cursor: pointer;
-  background-color: white;
-  width: 92%;
 }

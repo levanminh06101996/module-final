@@ -6,9 +6,8 @@ import "../../../../assets/styles/global.scss";
 import AddToCart from "../../../../components/AddToCart/AddToCart";
 import HoverView from "../../../../components/HoverView/HoverView";
 import Test from "../../../../components/Tes/Test";
-import Banner1 from "../../../../assets/images/promotional-products/promotional-products-1.webp";
-import BgBanner1 from "../../../../assets/images/promotional-products/bg-promotional-products1.jpg";
 import NextIconCategory from "../../../../components/icons/NextIconCategory";
+import promotionalData from "../../../../db/promotional-products.json";
 
 const PromotionalProduct = () => {
   return (
@@ -59,46 +58,31 @@ function CustomArrows() {
   return (
     <div className={styles.slider_promotional}>
       <Slider {...settings}>
-        <div className={styles.customSlide}>
-          <div className={styles.imageSlide}>
-            <img src={BgBanner1} alt="" className={styles.bgOverlay} />
-            <img className={styles.imageDetail} src={Banner1} alt="" />
-            <div className={styles.proSale}>
-              <Prosale amount="-26%" />
+        {promotionalData.promotional.map((item) => (
+          <div className={styles.customSlide} key={item.id}>
+            <div className={styles.imageSlide}>
+              <img src={item.bgi} alt="" className={styles.bgOverlay} />
+              <img className={styles.imageDetail} src={item.img} alt="" />
+              <div className={styles.proSale}>
+                <Prosale amount={item.discount} />
+              </div>
+              <div className={styles.AddToCart}>
+                <AddToCart />
+              </div>
             </div>
-            <div className={styles.AddToCart}>
-              <AddToCart />
+            <div className={styles.informationDetail}>
+              <h4 className={styles.varialt}>
+                <p>{item.quantityColor}</p>
+                <p>{item.quantitySize}</p>
+              </h4>
+              <h4 className={styles.titleDetail}>{item.title}</h4>
+              <h4 className={styles.priceDetail}>
+                <span>{item.quantityPrice}</span>
+                <span>{item.quantityPriceNo}</span>
+              </h4>
             </div>
           </div>
-          <div className={styles.informationDetail}>
-            <h4 className={styles.varialt}>
-              <p>+16 Màu sắc</p>
-              <p>+4 Kích thước</p>
-            </h4>
-            <h4 className={styles.titleDetail}>
-              Áo T shirt trơn in logo ngực FSTS001
-            </h4>
-            <h4 className={styles.priceDetail}>
-              <span>149,000đ</span>
-              <span>200,000đ</span>
-            </h4>
-          </div>
-        </div>
-        <div className={styles.customSlide}>
-          <img src={Banner1} alt="" />
-        </div>
-        <div className={styles.customSlide}>
-          <img src={Banner1} alt="" />
-        </div>
-        <div className={styles.customSlide}>
-          <img src={Banner1} alt="" />
-        </div>
-        <div className={styles.customSlide}>
-          <img src={Banner1} alt="" />
-        </div>
-        <div className={styles.customSlide}>
-          <img src={Banner1} alt="" />
-        </div>
+        ))}
       </Slider>
     </div>
   );
