@@ -15,8 +15,9 @@ const Home = () => {
       <Category className={styles.categories} />
       <PromotionalProduct className={styles.promotional} />
       <HighlightProduct />
-      {/* <Outfit />
+      <Outfit />
       <Clothes />
+      {/*
       <Information />    */}
     </div>
   );

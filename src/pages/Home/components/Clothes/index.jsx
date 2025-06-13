@@ -1,11 +1,7 @@
-import React from "react";
+import HighlightProduct from "../HighlightProduct";
 
 const Clothes = () => {
-  return (
-    <div>
-      <h1>Clothes</h1>
-    </div>
-  );
+  return <HighlightProduct />;
 };
 
 export default Clothes;

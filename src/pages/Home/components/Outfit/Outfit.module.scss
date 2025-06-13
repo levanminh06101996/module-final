@@ -1,0 +1,185 @@
+.wrapperOutfit {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #faefec;
+}
+
+.title {
+  margin-bottom: 30px;
+  h2 {
+    font-size: 37px;
+    font-weight: 600;
+    color: #000000;
+  }
+}
+
+.description {
+  margin-top: 15px;
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.hoverView {
+  margin-top: 10px;
+}
+
+.hoverViewTwo {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.outFitMain {
+  position: relative;
+}
+
+.image_note {
+  display: flex;
+  position: absolute;
+  max-width: 250px;
+  height: 100px;
+  padding: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  top: 18%;
+  left: 20%;
+}
+
+.image_note::before {
+  z-index: 2;
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(90deg);
+  top: 50%;
+  left: -6%;
+}
+
+.note_image {
+  max-width: 32%;
+  img {
+    width: 100%;
+  }
+}
+
+.title_note {
+  padding-left: 12px;
+  font-size: 13px;
+  h3 {
+    position: relative;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+
+  h3:hover:before {
+    content: "";
+    display: inline-block;
+    width: 83%;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 82%;
+  }
+}
+
+.notePrice {
+  span:first-child {
+    font-weight: 600;
+    color: #ff2c26;
+    margin-right: 6px;
+  }
+  span:nth-of-type(2) {
+    position: relative;
+    color: #878c8f;
+  }
+  span:nth-of-type(2)::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #878c8f;
+    top: 49%;
+  }
+}
+
+.addIcon {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  padding-left: 7.8px;
+  padding-top: 7px;
+  top: 22.5%;
+  left: 17%;
+  z-index: 5;
+}
+
+.lds_ripple {
+  position: absolute;
+  /* change color here */
+  color: white;
+  top: -57px;
+  left: -29px;
+  z-index: -1;
+}
+.lds_ripple,
+.lds_ripple div {
+  box-sizing: border-box;
+}
+.lds_ripple {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.lds_ripple div {
+  position: absolute;
+  border: 4px solid currentColor;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds_ripple 3s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds_ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds_ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}

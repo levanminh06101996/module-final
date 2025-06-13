@@ -4,10 +4,10 @@ import Banner1 from "../../../../../assets/images/productHighLight/spnb1.webp";
 import BgBaner1 from "../../../../../assets/images/productHighLight/bg_spnb1.webp";
 import Prosale from "../../../../../components/Prosale/Prosale";
 import AddToCart from "../../../../../components/AddToCart/AddToCart";
-function ContentTab1() {
+function ContentTab2() {
   return (
     <div className={`row row-cols-5 ${styles.slider_promotional}`}>
-      {ContentTab1Data.productsHl.map((item) => (
+      {ContentTab1Data.productsHlSport.map((item) => (
         <div className={styles.customSlide} key={item.id}>
           <div className={styles.imageSlide}>
             <img src={item.bgi} alt="" className={styles.bgOverlay} />
@@ -35,4 +35,4 @@ function ContentTab1() {
     </div>
   );
 }
-export default ContentTab1;
+export default ContentTab2;
