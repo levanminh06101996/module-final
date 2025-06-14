@@ -1,12 +1,12 @@
 import React from "react";
 import Banner from "./components/Banner";
 import Category from "./components/Category";
-import Clothes from "./components/Clothes";
 import HighlightProduct from "./components/HighlightProduct";
 import Information from "./components/Information";
 import Outfit from "./components/Outfit";
 import PromotionalProduct from "./components/PromotionalProduct";
 import styles from "./Home.module.scss";
+import Clothers from "./components/Clothers/index";
 
 const Home = () => {
   return (
@@ -16,9 +16,8 @@ const Home = () => {
       <PromotionalProduct className={styles.promotional} />
       <HighlightProduct />
       <Outfit />
-      <Clothes />
-      {/*
-      <Information />    */}
+      <Clothers />
+      <Information />
     </div>
   );
 };

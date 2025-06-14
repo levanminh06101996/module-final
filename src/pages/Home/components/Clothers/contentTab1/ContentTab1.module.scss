@@ -1,0 +1,154 @@
+@use "../../../../../assets//styles/grid" as grid;
+
+.promotional {
+  position: relative;
+  height: 660px;
+  background-color: #fff9f9;
+}
+
+.prosale {
+  position: absolute;
+  z-index: 1;
+}
+
+.slider_promotional {
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promotionalTitle {
+  height: 50px;
+  min-width: 500px;
+  display: flex;
+  gap: 40px;
+  font-size: 37px;
+  color: black;
+  font-weight: 600;
+  a {
+    transform: translateY(16%);
+  }
+}
+
+.hoverView {
+  margin-top: 16%;
+  text-align: center;
+}
+
+.imageSlide {
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.imageDetail {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.bgOverlay {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.imageSlide:hover {
+  .bgOverlay {
+    transform: scale(1.15);
+    opacity: 1;
+    width: 100%;
+  }
+  .AddToCart {
+    opacity: 1;
+  }
+}
+
+.slider_promotional {
+  position: relative;
+}
+
+.AddToCart {
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 85%;
+  left: 22%;
+  opacity: 0;
+}
+
+.proSale {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+
+.informationDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 20px;
+  height: 104px;
+  gap: 4px;
+  cursor: pointer;
+  background-color: white;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+}
+.customSlide:has(.informationDetail:hover) .AddToCart {
+  opacity: 1;
+}
+
+.customSlide:has(.informationDetail:hover) .bgOverlay {
+  transform: scale(1.15);
+  opacity: 1;
+  width: 100%;
+}
+.customSlide {
+  margin-bottom: 24px;
+}
+.varialt {
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.titleDetail {
+  line-height: 1.1;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.priceDetail {
+  font-size: 14px;
+  margin-top: 6px;
+
+  span:first-child {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ff2c26;
+    margin-right: 10px;
+  }
+  span:nth-of-type(2) {
+    position: relative;
+    color: #878c8f;
+  }
+  span:nth-of-type(2)::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #878c8f;
+    top: 49%;
+  }
+}
