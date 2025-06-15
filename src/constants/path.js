@@ -1,8 +1,11 @@
-export const path = {
+const path = {
   home: "/",
   about: "/about",
-  product: "/product",
+  products: "/products",
   productDetail: "/product/:id",
-
   notFound: "*",
+  login: "/login",
+  register: "/register",
 };
+
+export default path;

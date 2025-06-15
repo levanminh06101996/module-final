@@ -7,7 +7,8 @@ import SearchIcon from "../icons/SearchIcon";
 import User from "../icons/User";
 import ShoppingCart from "../icons/ShoppingCart";
 import OptionalSymbol from "../icons/OptionalSymbol";
-
+import { NavLink } from "react-router-dom";
+import path from "../../constants/path";
 const Header = () => {
   return (
     <div>
@@ -37,7 +38,7 @@ const Header = () => {
       <section className={styles.main_header}>
         <div className={`container ${styles.header_container}`}>
           <div className={styles.logo_header}>
-            <a href="">
+            <a href="/">
               <img src={logo} alt="Torano" />
             </a>
           </div>

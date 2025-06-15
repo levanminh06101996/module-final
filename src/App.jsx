@@ -1,10 +1,12 @@
-import AppRoutes from "./routes/AppRoutes";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import ScrollTop from "./components/ScrollTop";
+import AppRoutes from "./components/AppRoutes";
 function App() {
   return (
-    <div>
+    <Router>
+      <ScrollTop />
       <AppRoutes />
-    </div>
+    </Router>
   );
 }
 
