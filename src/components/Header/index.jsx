@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use, useState } from "react";
 import "../../assets/styles/global.scss";
 import styles from "./Header.module.scss";
 import Notice from "../icons/Notice";

@@ -2,11 +2,9 @@
 @use "@/assets//styles/_mixins.scss";
 @use "@/assets//styles//bases";
 
-// @include mixins.screen(xxl) {
-//   :global {
-//     .container {
-
-//     }
+// @include mixins.screen(sm) {
+//   .topbar_bottom {
+//     background-color: aqua;
 //   }
 // }
 

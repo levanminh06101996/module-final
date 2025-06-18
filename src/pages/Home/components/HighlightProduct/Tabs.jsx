@@ -36,7 +36,7 @@ function Tabs({ defaultIndex = 0, children, onchange = defaultFn }) {
         })}
       </div>
       <div className={styles.tabs_content}>{tabs[currentIndex]}</div>
-      <div className={styles.hoverView}>
+      <div className={styles.hoverView1}>
         <HoverView
           title="XEM TẤT CẢ SẢN PHẨM NỔI BẬT "
           minWidth="400px"

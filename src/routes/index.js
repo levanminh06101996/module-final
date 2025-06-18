@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import DefaultLayout from "../layouts/DefaultLayout";
 import About from "../pages/About";
 import NotFound from "../components/errors/NotFound";
-import Products from "../pages/Products/Products";
+import Products from "../pages/Products";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 
@@ -32,6 +32,10 @@ const paths = [
     layout: DefaultLayout,
   },
   { path: path.login, component: Login, layout: DefaultLayout },
+  {
+    path: path.products,
+    component: DefaultLayout,
+  },
 ];
 
 export default paths;

@@ -1,0 +1,28 @@
+.title_bar {
+  background-color: #f5f5f5;
+}
+.title_bar_heading {
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 13px;
+  a:first-child {
+    font-weight: normal;
+  }
+}
+.heading_first {
+  position: relative;
+  margin-right: 14px;
+}
+
+.heading_first::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 70%;
+  background-color: #ccc;
+  top: 16%;
+  left: 112%;
+}

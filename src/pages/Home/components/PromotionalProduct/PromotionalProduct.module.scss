@@ -23,7 +23,6 @@
 
 .slider_promotional {
   width: 100%;
-  height: 200px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -42,8 +41,8 @@
   }
 }
 
-.hoverView {
-  margin-top: 16%;
+.promotional .hoverView {
+  margin-top: 3%;
   text-align: center;
 }
 
@@ -110,6 +109,8 @@
 }
 
 .informationDetail {
+  display: flex;
+  flex-direction: column;
   padding: 10px 8px;
 }
 .customSlide:has(.informationDetail:hover) .AddToCart {
@@ -132,6 +133,11 @@
   line-height: 1.1;
   margin-top: 8px;
   font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .priceDetail {
