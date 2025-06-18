@@ -86,7 +86,6 @@ a:first-child {
   background-color: variables.$secondary-color;
   font-size: 15px;
   font-weight: 600;
-  // background-color: aqua;
 }
 
 .header_container {
@@ -99,12 +98,22 @@ a:first-child {
 .main_menu {
   display: flex;
 }
-
-.main_menu li a {
+.main_menu > li {
   position: relative;
+}
+
+.main_menu > li > a {
   padding: 18px 20px;
   font-size: 15px;
   display: block;
+  font-weight: 700;
+}
+
+.sub_menu > li > a {
+  padding: 18px 20px;
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
 }
 
 .main_menu .sub_menu {
@@ -115,8 +124,11 @@ a:first-child {
   transform: translateY(10px);
   position: absolute;
   width: 200px;
-  top: 60px;
-  left: 30px;
+  top: 94%;
+  left: 16%;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  z-index: 150;
 }
 
 .main_menu li:hover .sub_menu {
@@ -169,4 +181,14 @@ a:first-child {
   font-size: 12px;
   bottom: 45%;
   left: 93%;
+}
+.arrowHeader {
+  display: inline-block;
+  margin-left: 3px;
+  transform: translateY(8%);
+  rotate: (0deg);
+  transition: rotate 0.2s ease-in-out;
+}
+.main_menu li > a:hover .arrowHeader {
+  rotate: (180deg);
 }

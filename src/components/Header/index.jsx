@@ -9,6 +9,7 @@ import ShoppingCart from "../icons/ShoppingCart";
 import OptionalSymbol from "../icons/OptionalSymbol";
 import { NavLink } from "react-router-dom";
 import path from "../../constants/path";
+import ArrowNavbar from "../arrowNavbar";
 const Header = () => {
   return (
     <div>
@@ -48,40 +49,65 @@ const Header = () => {
                 <a href="">Sản phẩm mới</a>
               </li>
               <li>
-                <a href="">Sale</a>
+                <a href="">
+                  {" "}
+                  Danh mục Sale
+                  <span className={styles.arrowHeader}>
+                    <ArrowNavbar />
+                  </span>
+                </a>
+                <ul className={styles.sub_menu}>
+                  <li>
+                    <a href="">Sale 70%</a>
+                  </li>
+                  <li>
+                    <a href="">Sale Upto 50%</a>
+                  </li>
+                  <li>
+                    <a href="">Sale Upto 30%</a>
+                  </li>
+                  <li>
+                    <a href="">Sale 10% & 20%</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="">
                   Áo nam
-                  {/* <OptionalSymbol className={styles.Optional_Symbol} /> */}
-                  <ul className={styles.sub_menu}>
-                    <li>
-                      <a href="">Áo Khoác</a>
-                    </li>
-                    <li>
-                      <a href="">Áo - Quần Nỉ</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Len</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Sơ Mi</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Polo</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Thun</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Blazer</a>
-                    </li>
-                  </ul>
+                  <div className={styles.arrowHeader}>
+                    <ArrowNavbar />
+                  </div>
                 </a>
+                <ul className={styles.sub_menu}>
+                  <li>
+                    <a href="">Áo Khoác</a>
+                  </li>
+                  <li>
+                    <a href="">Áo - Quần Nỉ</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Len</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Sơ Mi</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Polo</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Thun</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Blazer</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="">
                   Quần nam
+                  <span className={styles.arrowHeader}>
+                    <ArrowNavbar />
+                  </span>
                   {/* <OptionalSymbol className={styles.Optional_Symbol} /> */}
                   <ul className={styles.sub_menu}>
                     <li>
@@ -102,14 +128,13 @@ const Header = () => {
               <li>
                 <a href="">
                   Bộ sưu tập
-                  {/* <OptionalSymbol className={styles.Optional_Symbol} /> */}
+                  <span className={styles.arrowHeader}>
+                    <ArrowNavbar />
+                  </span>
                 </a>
               </li>
               <li>
                 <a href="">Hệ thống cửa hàng</a>
-              </li>
-              <li>
-                <a href="">Ưu đãi</a>
               </li>
             </ul>
           </div>
