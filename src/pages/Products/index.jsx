@@ -5,7 +5,63 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import ArrowNavbar from "../../components/arrowNavbar";
+import { NavLink } from "react-router-dom";
+import path from "../../constants/path";
+import { height } from "@fortawesome/free-solid-svg-icons/fa0";
+
+// src/data/menuData.js
+export const menuData = [
+  { title: "Sản phẩm mới", href: "/products/new", children: null },
+  {
+    title: "Danh mục sale",
+    href: "/products/sale",
+    children: [
+      { title: "Sale 70%", href: "/products/sale/70" },
+      { title: "Sale upto 50%", href: "/products/sale/50" },
+      { title: "Sale upto 30%", href: "/products/sale/30" },
+      { title: "Sale 10% & 20%", href: "/products/sale/10-20" },
+    ],
+  },
+  {
+    title: "Áo nam",
+    href: "/products/men-shirts",
+    children: [
+      { title: "Áo Polo", href: "/products/men-shirts/polo" },
+      { title: "Áo Thun", href: "/products/men-shirts/tshirt" },
+      { title: "Áo Blazer", href: "/products/men-shirts/blazer" },
+      { title: "Áo Khoác", href: "/products/men-shirts/jacket" },
+      { title: "Áo Len", href: "/products/men-shirts/sweater" },
+      { title: "Áo-Quần Nỉ", href: "/products/men-shirts/suit" },
+    ],
+  },
+  {
+    title: "Quần nam",
+    href: "/products/men-pants",
+    children: [
+      { title: "Quần Short", href: "/products/men-pants/short" },
+      { title: "Quần Jean", href: "/products/men-pants/jean" },
+      { title: "Quần Âu", href: "/products/men-pants/formal" },
+      { title: "Quần Dài Kaki", href: "/products/men-pants/kaki" },
+    ],
+  },
+  {
+    title: "Bộ sưu tập",
+    href: "/products/collections",
+    children: [
+      { title: "2023", href: "/products/collections/2023" },
+      { title: "2022", href: "/products/collections/2022" },
+      { title: "2021", href: "/products/collections/2021" },
+      { title: "2020", href: "/products/collections/2020" },
+    ],
+  },
+  { title: "Hệ thống cửa hàng", href: "/stores", children: null },
+];
+
 const Products = () => {
+  const [openItems, setOpenItems] = useState({});
+  const toggleItem = (index) => {
+    setOpenItems((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
   return (
     <div>
       <TitleBar />
@@ -20,98 +76,39 @@ const Products = () => {
             </div>
             <nav>
               <ul className={styles.navBar}>
-                <li className={styles.subMenu}>
-                  <a href="">Sản phẩm mới</a>
-                </li>
-                <li className={styles.subMenu}>
-                  <a href="">Danh mục sale</a>
-                  <div className={styles.arrowNav}>
-                    <ArrowNavbar />
-                  </div>
-                  <ul className={styles.treeMenu}>
-                    <li>
-                      <a href="">Sale 70%</a>
-                    </li>
-                    <li>
-                      <a href="">Sale upto 50%</a>
-                    </li>
-                    <li>
-                      <a href="">Sale upto 30%</a>
-                    </li>
-                    <li>
-                      <a href="">Sale 10% & 20%</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className={styles.subMenu}>
-                  <a href="">Áo nam</a>
-                  <div className={styles.arrowNav}>
-                    <ArrowNavbar />
-                  </div>
-                  <ul className={styles.treeMenu}>
-                    <li>
-                      <a href="">Áo Polo</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Thun</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Blazer</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Khoác</a>
-                    </li>
-                    <li>
-                      <a href="">Áo Len</a>
-                    </li>
-                    <li>
-                      <a href="">Áo-Quần Nỉ</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className={styles.subMenu}>
-                  <a href="">Quần nam</a>
-                  <div className={styles.arrowNav}>
-                    <ArrowNavbar />
-                  </div>
-                  <ul className={styles.treeMenu}>
-                    <li>
-                      <a href="">Quần Short</a>
-                    </li>
-                    <li>
-                      <a href="">Quần Jean</a>
-                    </li>
-                    <li>
-                      <a href="">Quần Âu</a>
-                    </li>
-                    <li>
-                      <a href="">Quần Dài Kaki</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className={styles.subMenu}>
-                  <a href="">Bộ sưu tập</a>
-                  <div className={styles.arrowNav}>
-                    <ArrowNavbar />
-                  </div>
-                  <ul className={styles.treeMenu}>
-                    <li>
-                      <a href="">2023</a>
-                    </li>
-                    <li>
-                      <a href="">2022</a>
-                    </li>
-                    <li>
-                      <a href="">2021</a>
-                    </li>
-                    <li>
-                      <a href="">2020</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className={styles.subMenu}>
-                  <a href="">Hệ thống cửa hàng</a>
-                </li>
+                {menuData.map((item, index) => (
+                  <li
+                    key={index}
+                    className={styles.subMenu}
+                    onClick={() => {
+                      toggleItem(index);
+                    }}
+                  >
+                    <NavLink className={styles.navLink}>{item.title}</NavLink>
+                    {item.children && (
+                      <div
+                        className={styles.arrowNav}
+                        style={{
+                          transform: openItems[index]
+                            ? "rotate(180deg)"
+                            : "rotate(0deg)",
+                          transition: "transform 0.3s ease", // Hiệu ứng mượt mà
+                        }}
+                      >
+                        <ArrowNavbar />
+                      </div>
+                    )}
+                    {item.children &&
+                      openItems[index] &&
+                      item.children.map((child) => (
+                        <ul className={styles.treeMenu}>
+                          <li>
+                            <NavLink>{child.title}</NavLink>
+                          </li>
+                        </ul>
+                      ))}
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>

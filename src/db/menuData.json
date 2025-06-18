@@ -1,0 +1,49 @@
+{
+  "menuData": [
+    {
+      "title": "Sản phẩm mới",
+      "href": "/products",
+      "children": "null"
+    },
+    {
+      "title": "Danh mục sale",
+      "href": "/products",
+      "children": [
+        {
+          "title": "Sale 70%",
+          "href": "/products"
+        },
+        {
+          "title": "Sale upto 50%",
+          "href": "/products"
+        },
+        {
+          "title": "Sale upto 50%",
+          "href": "/products"
+        },
+        {
+          "title": "Sale upto 30%",
+          "href": "/products"
+        },
+        {
+          "title": "Sale 10% & 20%",
+          "href": "/products"
+        }
+      ]
+    },
+    {
+      "title": "Áo nam",
+      "href": "/products",
+      "children": [
+        {
+          "title": "Áo Polo",
+          "href": "/products"
+        },
+        {
+          "title": "Áo Thun",
+          "href": "/products"
+        }
+      ]
+    }
+  ]
+}

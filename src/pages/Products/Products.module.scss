@@ -1,6 +1,5 @@
 .heroProducts {
   padding: 30px 0 40px 0;
-  background-color: aqua;
   height: 1200px;
 }
 .sideBar {
@@ -13,6 +12,7 @@
   font-weight: 600;
 }
 .subTitle {
+  padding: 10px 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,6 +24,7 @@
 }
 
 .navBar {
+  padding: 10px 0 10px;
   p {
     position: relative;
     padding: 5px 5px 5px 0;
@@ -31,6 +32,7 @@
 }
 
 .arrowNav {
+  margin-left: 3px;
   display: inline-block;
   transform: translateY(4%);
 }
@@ -46,3 +48,17 @@
     font-weight: normal;
   }
 }
+.subMenu > a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.subMenu:not(:first-child) {
+  margin-top: 8px;
+}
+// .navLink {
+//   font-size: 14px;
+//   font-weight: 300;
+// }
