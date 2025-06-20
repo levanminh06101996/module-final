@@ -1,0 +1,224 @@
+{
+  "productsDetail": [
+    {
+      "id": 1,
+      "discount": "-26%",
+      "title": "Áo T shirt trơn in logo ngực FSTS001",
+      "img": "/src/assets/images/promotional-products/promotional-products-1.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products2.webp",
+      "quantityColor": "+16 màu sắc",
+      "quantitySize": "+4 Kích thước",
+      "quantityPrice": "149,000₫",
+      "quantityPriceNo": "200,000₫"
+    },
+    {
+      "id": 2,
+      "discount": "-29%",
+      "title": "Áo Polo trơn bo kẻ FSTP003 Hoạ tiết kẻ trơn",
+      "img": "/src/assets/images/promotional-products/promotional-products-2.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products1.jpg",
+      "quantityColor": "+8 màu sắc",
+      "quantitySize": "+7 Kích thước",
+      "quantityPrice": "152,000₫",
+      "quantityPriceNo": "310,000₫"
+    },
+    {
+      "id": 3,
+      "discount": "-34%",
+      "title": "Áo polo monogram in tràn họa tiết GSTP051",
+      "img": "/src/assets/images/promotional-products/promotional-products-3.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products3.jpg",
+      "quantityColor": "+9 màu sắc",
+      "quantitySize": "+2 Kích thước",
+      "quantityPrice": "182,000₫",
+      "quantityPriceNo": "315,000₫"
+    },
+    {
+      "id": 4,
+      "discount": "-20%",
+      "title": "Quần short khaki cạp chun basic, diễu gấu FSBK010",
+      "img": "/src/assets/images/promotional-products/promotional-products-4.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products4.webp",
+      "quantityColor": "+12 màu sắc",
+      "quantitySize": "+3 Kích thước",
+      "quantityPrice": "173,000₫",
+      "quantityPriceNo": "320,000₫"
+    },
+    {
+      "id": 5,
+      "discount": "-40%",
+      "title": "Quần âu slim-fit cạp trơn - DABT900",
+      "img": "/src/assets/images/promotional-products/promotional-products-5.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products5.webp",
+      "quantityColor": "+17 màu sắc",
+      "quantitySize": "+5 Kích thước",
+      "quantityPrice": "153,000₫",
+      "quantityPriceNo": "328,000₫"
+    },
+    {
+      "id": 6,
+      "discount": "-37%",
+      "title": "Quần âu slim-fit cạp trơn - DABT900",
+      "img": "/src/assets/images/promotional-products/promotional-products-6.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products6.webp",
+      "quantityColor": "+6 màu sắc",
+      "quantitySize": "+5 Kích thước",
+      "quantityPrice": "167,000₫",
+      "quantityPriceNo": "218,000₫"
+    },
+    {
+      "id": 7,
+      "discount": "-38%",
+      "title": "Áo Polo trơn basic thêu logo ngực ESTP038 - Nâu đậm",
+      "img": "/src/assets/images/promotional-products/promotional-products-7.jpg",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products7.webp",
+      "quantityColor": "+11 màu sắc",
+      "quantitySize": "+7 Kích thước",
+      "quantityPrice": "168,000₫",
+      "quantityPriceNo": "343,000₫"
+    },
+    {
+      "id": 8,
+      "discount": "-38%",
+      "title": "Áo polo trơn bo kẻ thêu logo ngực GSTP066",
+      "img": "/src/assets/images/promotional-products/promotional-products-8.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products8.webp",
+      "quantityColor": "+13 màu sắc",
+      "quantitySize": "+1 Kích thước",
+      "quantityPrice": "249,000₫",
+      "quantityPriceNo": "500,000₫"
+    },
+    {
+      "id": 9,
+      "discount": "-40%",
+      "title": "Áo polo can phối thêu logo đại bàng GSTP047",
+      "img": "/src/assets/images/promotional-products/promotional-products-9.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products9.jpg",
+      "quantityColor": "+9 màu sắc",
+      "quantitySize": "+2 Kích thước",
+      "quantityPrice": "339,000₫",
+      "quantityPriceNo": "700,000₫"
+    },
+    {
+      "id": 10,
+      "discount": "-39%",
+      "title": "Áo T shirt thể thao basic FSTS002",
+      "img": "/src/assets/images/promotional-products/promotional-products-10.webp",
+      "bgi": "/src/assets/images/promotional-products/bg-promotional-products10.webp",
+      "quantityColor": "+5 màu sắc",
+      "quantitySize": "+3 Kích thước",
+      "quantityPrice": "254,000₫",
+      "quantityPriceNo": "320,000₫"
+    },
+    {
+      "id": 11,
+      "discount": "-26%",
+      "title": "Áo T shirt trơn in logo ngực FSTS001",
+      "img": "/src/assets/images/productHighLight/spnb16.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb16.jpg",
+      "quantityColor": "+16 màu sắc",
+      "quantitySize": "+4 Kích thước",
+      "quantityPrice": "149,000₫",
+      "quantityPriceNo": "200,000₫"
+    },
+    {
+      "id": 22,
+      "discount": "-29%",
+      "title": "Áo Polo trơn bo kẻ FSTP003 Hoạ tiết kẻ trơn",
+      "img": "/src/assets/images/productHighLight/spnb12.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb12.jpg",
+      "quantityColor": "+8 màu sắc",
+      "quantitySize": "+7 Kích thước",
+      "quantityPrice": "152,000₫",
+      "quantityPriceNo": "310,000₫"
+    },
+    {
+      "id": 13,
+      "discount": "-34%",
+      "title": "Áo polo monogram in tràn họa tiết GSTP051",
+      "img": "/src/assets/images/productHighLight/spnb13.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb13.jpg",
+      "quantityColor": "+9 màu sắc",
+      "quantitySize": "+2 Kích thước",
+      "quantityPrice": "182,000₫",
+      "quantityPriceNo": "315,000₫"
+    },
+    {
+      "id": 14,
+      "discount": "-20%",
+      "title": "Quần short khaki cạp chun basic, diễu gấu FSBK010",
+      "img": "/src/assets/images/productHighLight/spnb14.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb14.jpg",
+      "quantityColor": "+12 màu sắc",
+      "quantitySize": "+3 Kích thước",
+      "quantityPrice": "173,000₫",
+      "quantityPriceNo": "320,000₫"
+    },
+    {
+      "id": 15,
+      "discount": "-40%",
+      "title": "Quần âu slim-fit cạp trơn - DABT900",
+      "img": "/src/assets/images/productHighLight/spnb15.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb15.jpg",
+      "quantityColor": "+17 màu sắc",
+      "quantitySize": "+5 Kích thước",
+      "quantityPrice": "153,000₫",
+      "quantityPriceNo": "328,000₫"
+    },
+    {
+      "id": 16,
+      "discount": "-37%",
+      "title": "Quần âu slim-fit cạp trơn - DABT900",
+      "img": "/src/assets/images/productHighLight/spnb3.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb3.webp",
+      "quantityColor": "+6 màu sắc",
+      "quantitySize": "+5 Kích thước",
+      "quantityPrice": "167,000₫",
+      "quantityPriceNo": "218,000₫"
+    },
+    {
+      "id": 17,
+      "discount": "-38%",
+      "title": "Áo Polo trơn basic thêu logo ngực ESTP038 - Nâu đậm",
+      "img": "/src/assets/images/productHighLight/spnb7.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb7.webp",
+      "quantityColor": "+11 màu sắc",
+      "quantitySize": "+7 Kích thước",
+      "quantityPrice": "168,000₫",
+      "quantityPriceNo": "343,000₫"
+    },
+    {
+      "id": 18,
+      "discount": "-38%",
+      "title": "Áo polo trơn bo kẻ thêu logo ngực GSTP066",
+      "img": "/src/assets/images/productHighLight/spnb8.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb8.jpg",
+      "quantityColor": "+13 màu sắc",
+      "quantitySize": "+1 Kích thước",
+      "quantityPrice": "249,000₫",
+      "quantityPriceNo": "500,000₫"
+    },
+    {
+      "id": 19,
+      "discount": "-40%",
+      "title": "Áo polo can phối thêu logo đại bàng GSTP047",
+      "img": "/src/assets/images/productHighLight/spnb9.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb9.jpg",
+      "quantityColor": "+9 màu sắc",
+      "quantitySize": "+2 Kích thước",
+      "quantityPrice": "339,000₫",
+      "quantityPriceNo": "700,000₫"
+    },
+    {
+      "id": 20,
+      "discount": "-39%",
+      "title": "Áo T shirt thể thao basic FSTS002",
+      "img": "/src/assets/images/productHighLight/spnb10.webp",
+      "bgi": "/src/assets/images/productHighLight/bg_spnb10.jpg",
+      "quantityColor": "+5 màu sắc",
+      "quantitySize": "+3 Kích thước",
+      "quantityPrice": "254,000₫",
+      "quantityPriceNo": "320,000₫"
+    }
+  ]
+}

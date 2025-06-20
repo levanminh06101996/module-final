@@ -45,11 +45,13 @@
     background-color: #ededed;
     border: none;
     padding: 5px 20px;
+    border: 1px solid #ededed;
   }
   input {
     margin-bottom: 25px;
   }
 }
+
 .wrapperForm {
   display: flex;
   flex-direction: column;

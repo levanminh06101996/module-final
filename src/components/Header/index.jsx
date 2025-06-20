@@ -10,7 +10,13 @@ import OptionalSymbol from "../icons/OptionalSymbol";
 import { NavLink } from "react-router-dom";
 import path from "../../constants/path";
 import ArrowNavbar from "../arrowNavbar";
+import HoverView from "../HoverView/HoverView";
 const Header = () => {
+  const [active, setActive] = useState(false);
+  const [activeTwo, setActiveTwo] = useState(false);
+  const toggleActive = () => {
+    setActive((prev) => !prev);
+  };
   return (
     <div>
       <section className={styles.topbar}>
@@ -50,7 +56,6 @@ const Header = () => {
               </li>
               <li>
                 <a href="">
-                  {" "}
                   Danh mục Sale
                   <span className={styles.arrowHeader}>
                     <ArrowNavbar />
@@ -139,9 +144,78 @@ const Header = () => {
             </ul>
           </div>
           <div className={styles.header_action}>
-            <SearchIcon className={styles.search_icon} />
-            <User className={styles.user_icon} />
-            <ShoppingCart className={styles.shoppingcart_icon} />
+            <div>
+              <SearchIcon className={styles.search_icon} />
+            </div>
+            <div className={styles.user_login} onClick={toggleActive}>
+              <User className={styles.user_icon} />
+              {active && (
+                <div
+                  className={`${styles.wrapperActive} ${
+                    active ? styles.heroActive : ""
+                  }`}
+                >
+                  <div className={styles.loginActive}>
+                    <div className={styles.contentTitle}>
+                      <p>ĐĂNG NHẬP TÀI KHOẢN</p>
+                      <p>Nhập email và mật khẩu của bạn:</p>
+                    </div>
+                    <div>
+                      <form action="">
+                        <div className={styles.row}>
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div className={styles.row}>
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Mật khẩu"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <p className={styles.row_description}>
+                      This site is protected by reCAPTCHA and the Google
+                      <a href=""> Privacy Policy</a> and
+                      <a href=""> Terms of Service</a> apply.
+                    </p>
+                    <div className={styles.hoverViewHeader}>
+                      <HoverView
+                        minWidth="298px"
+                        title="Đăng Nhập"
+                        height="42px"
+                      />
+                    </div>
+                    <div className={styles.secondary_action}>
+                      <div className={styles.createAcc}>
+                        <span>Khách hàng mới?</span>
+                        <span>
+                          <NavLink to={path.register}> Tạo tài khoản</NavLink>
+                        </span>
+                      </div>
+                      <div className={styles.createAcc}>
+                        <span>Quên mật khẩu?</span>
+                        <span>
+                          <NavLink to={path.register}>
+                            {" "}
+                            Khôi phục mật khẩu
+                          </NavLink>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div>
+              <ShoppingCart className={styles.shoppingcart_icon} />
+            </div>
             <span className={styles.shoppingcart_number}>2</span>
           </div>
         </div>

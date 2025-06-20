@@ -1,64 +1,20 @@
 .heroProducts {
+  display: flex;
   padding: 30px 0 40px 0;
   height: 1200px;
+  justify-content: space-between;
 }
 .sideBar {
-  max-width: 25.4%;
+  position: sticky;
+  top: 50px;
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 25.4%;
+}
+.contentProducts {
+  overflow-y: auto;
+  max-width: 74.8%;
   padding-left: 12px;
   padding-right: 12px;
 }
-.Heading {
-  font-size: 26px;
-  font-weight: 600;
-}
-.subTitle {
-  padding: 10px 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.subTitle span {
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.navBar {
-  padding: 10px 0 10px;
-  p {
-    position: relative;
-    padding: 5px 5px 5px 0;
-  }
-}
-
-.arrowNav {
-  margin-left: 3px;
-  display: inline-block;
-  transform: translateY(4%);
-}
-
-.subMenu .treeMenu {
-  padding-left: 15px;
-
-  a {
-    font-size: 12px;
-    color: #666;
-    line-height: 26px;
-    padding: 5px 5px 5px 0;
-    font-weight: normal;
-  }
-}
-.subMenu > a {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-.subMenu:not(:first-child) {
-  margin-top: 8px;
-}
-// .navLink {
-//   font-size: 14px;
-//   font-weight: 300;
-// }

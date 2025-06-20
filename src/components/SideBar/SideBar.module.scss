@@ -1,0 +1,151 @@
+.sideBar {
+  max-width: 25.4%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.Heading {
+  font-size: 26px;
+  font-weight: 800;
+}
+.subTitle {
+  padding: 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subTitle span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.navBar {
+  padding: 10px 0 10px;
+  p {
+    position: relative;
+    padding: 5px 5px 5px 0;
+  }
+}
+
+.arrowNav {
+  margin-left: 3px;
+  display: inline-block;
+  transform: translateY(4%);
+}
+
+.subMenu .treeMenu {
+  padding-left: 15px;
+
+  a {
+    font-size: 12px;
+    color: #666;
+    line-height: 26px;
+    padding: 5px 5px 5px 0;
+    font-weight: normal;
+  }
+}
+.subMenu > a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.subMenu:not(:first-child) {
+  margin-top: 8px;
+}
+.priceTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#price-value {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+.colorTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 800;
+}
+.sizeTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.sizeList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.sizeList {
+  li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+}
+
+.sizeList li div:hover {
+  background-color: #000000;
+  color: white;
+}
