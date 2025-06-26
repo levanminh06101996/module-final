@@ -6,6 +6,7 @@ import NotFound from "../components/errors/NotFound";
 import Products from "../pages/Products";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
+import ProductDetails from "../pages/ProductDetails";
 
 const paths = [
   {
@@ -35,6 +36,11 @@ const paths = [
   {
     path: path.products,
     component: DefaultLayout,
+  },
+  {
+    path: path.productDetail,
+    component: ProductDetails,
+    layout: DefaultLayout,
   },
 ];
 

@@ -8,9 +8,9 @@ import productData from "../../db/productsDetail.json";
 const Products = () => {
   return (
     <div>
-      <TitleBar />
+      <TitleBar heading="Sản phẩm mới" />
       <div className={`container`}>
-        <div className={styles.heroProducts}>
+        <div className={styles.heroProductDetail}>
           <SideBar />
           <div
             className={`row row-cols-4 row-cols-lg-4 row-cols-md-2 gy-3 ${styles.contentProducts}`}

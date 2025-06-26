@@ -83,6 +83,8 @@ a:first-child {
 }
 
 .main_header {
+  position: relative;
+  z-index: 10;
   background-color: variables.$secondary-color;
   font-size: 15px;
   font-weight: 600;
@@ -209,10 +211,10 @@ a:first-child {
   border-radius: 3px;
   min-width: 280px;
   padding: 15px 20px;
+  background-color: white;
 }
 .contentTitle {
   padding-bottom: 10px;
-
   p:first-child {
     color: #000000;
     text-align: center;

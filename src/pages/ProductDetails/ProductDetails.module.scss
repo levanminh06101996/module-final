@@ -1,0 +1,44 @@
+.heroProductDetail {
+  display: flex;
+  padding: 30px 0 40px 0;
+  height: 1200px;
+  justify-content: space-between;
+}
+
+// .galleryContainer {
+//   max-width: 50%;
+// }
+// .mainGallery {
+//   height: 400px; /* Chiều cao ảnh chính */
+//   width: 50%;
+//   .swiper-slide {
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+// }
+
+// .thumbsGallery {
+//   height: 100px; /* Chiều cao thumbnails */
+//   width: 50%;
+//   margin-top: 10px;
+//   .swiper-slide {
+//     opacity: 0.4;
+//     cursor: pointer;
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//     &.swiper-slide-active {
+//       opacity: 1; /* Highlight thumbnail active */
+//     }
+//   }
+// }
+// .childMainGallery,
+// .childThumbGaller {
+//   width: 100%;
+//   height: 100%;
+// }

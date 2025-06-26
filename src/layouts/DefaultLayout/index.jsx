@@ -10,7 +10,7 @@ const DefaultLayout = () => {
       <main className={styles.mainproject}>
         <Outlet />
       </main>
-      {/* <Footer className={styles.footer} /> */}
+      <Footer className={styles.footer} />
     </div>
   );
 };

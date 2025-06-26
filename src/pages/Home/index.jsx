@@ -7,6 +7,7 @@ import Outfit from "./components/Outfit";
 import PromotionalProduct from "./components/PromotionalProduct";
 import styles from "./Home.module.scss";
 import Clothers from "./components/Clothers/index";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
