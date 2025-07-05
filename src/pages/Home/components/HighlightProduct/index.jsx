@@ -1,4 +1,4 @@
-import styles from "./HighlightProduct.module.scss";
+import styles from "./HighLightProduct.module.scss";
 import React from "react";
 import Tabs from "./Tabs";
 import Tab from "./Tab";
