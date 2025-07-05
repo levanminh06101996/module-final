@@ -10,7 +10,7 @@ const Products = () => {
     <div>
       <TitleBar heading="Sản phẩm mới" />
       <div className={`container`}>
-        <div className={styles.heroProductDetail}>
+        <div className={styles.heroProducts}>
           <SideBar />
           <div
             className={`row row-cols-4 row-cols-lg-4 row-cols-md-2 gy-3 ${styles.contentProducts}`}

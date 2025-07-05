@@ -1,0 +1,17 @@
+.tilePosts {
+  display: flex;
+}
+.postsPage {
+  height: 1000px;
+}
+.postsMain {
+  width: 500px;
+  height: 300px;
+  input {
+    border: 1px solid black;
+  }
+  button {
+    border: 1px solid red;
+    background-color: green;
+  }
+}

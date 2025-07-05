@@ -6,6 +6,7 @@ const path = {
   notFound: "*",
   login: "/login",
   register: "/register",
+  posts: "/postsPage",
 };
 
 export default path;
