@@ -9,7 +9,7 @@ import ShoppingCart from "../icons/ShoppingCart";
 import OptionalSymbol from "../icons/OptionalSymbol";
 import { NavLink } from "react-router-dom";
 import path from "../../constants/path";
-import ArrowNavbar from "../arrowNavbar";
+import ArrowNavbar from "../ArrowNavbar";
 import HoverView from "../HoverView/HoverView";
 const Header = () => {
   const [active, setActive] = useState(false);
