@@ -13,7 +13,6 @@ import ArrowNavbar from "../ArrowNavbar";
 import HoverView from "../HoverView/HoverView";
 const Header = () => {
   const [active, setActive] = useState(false);
-  const [activeTwo, setActiveTwo] = useState(false);
   const toggleActive = () => {
     setActive((prev) => !prev);
   };
