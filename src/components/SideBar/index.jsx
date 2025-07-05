@@ -3,7 +3,7 @@ import styles from "./SideBar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
-import ArrowNavbar from "../arrowNavbar";
+import ArrowNavbar from "../ArrowNavbar";
 import { NavLink } from "react-router-dom";
 
 export const menuData = [
